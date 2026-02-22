@@ -1,0 +1,37 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/assets/patrick-sketch.svg b/assets/patrick-sketch.svg
+new file mode 100644
+index 0000000000000000000000000000000000000000..afccfc556fafa31afb6e7456b44721679dc44631
+--- /dev/null
++++ b/assets/patrick-sketch.svg
+@@ -0,0 +1,27 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" role="img" aria-label="Sketch portrait">
++  <rect width="600" height="700" fill="#dcdcdc"/>
++  <g stroke="#111" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
++    <path d="M108 240 Q90 170 150 120 Q220 62 300 68 Q390 72 456 135 Q510 188 492 255"/>
++    <path d="M114 246 Q116 340 180 446 Q215 515 298 540 Q374 524 420 442 Q492 334 490 254"/>
++    <path d="M182 286 Q230 270 282 286"/>
++    <path d="M320 286 Q374 270 420 292"/>
++    <path d="M296 252 L298 430"/>
++    <path d="M296 350 Q306 370 322 386"/>
++    <path d="M248 428 Q296 448 346 426"/>
++    <path d="M230 490 Q298 516 366 490"/>
++    <path d="M160 566 Q230 536 298 540 Q370 536 440 568"/>
++    <path d="M80 626 Q168 560 246 584"/>
++    <path d="M518 626 Q430 560 350 584"/>
++    <path d="M164 152 L126 186 L176 182"/>
++    <path d="M434 152 L472 188 L424 182"/>
++  </g>
++  <g stroke="#111" stroke-width="2" opacity="0.65">
++    <path d="M130 210 L470 158"/>
++    <path d="M124 230 L468 177"/>
++    <path d="M145 478 L460 456"/>
++    <path d="M176 594 L430 610"/>
++    <path d="M200 130 L430 190"/>
++    <path d="M162 365 L230 515"/>
++    <path d="M436 370 L368 515"/>
++  </g>
++</svg>
+ 
+EOF
+)
